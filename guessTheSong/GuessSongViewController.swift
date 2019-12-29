@@ -46,8 +46,7 @@ class GuessSongViewController: UIViewController {
     }
     
     func initSong(){
-        
-        
+
         let ituneApi = "https://itunes.apple.com/search?media=music&limit=1&entity=musicTrack&term="
         let urlStr = ituneApi + songDataBase[GuessSongQuestion].replacingOccurrences(of: " ", with: "+").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         //print("urlStr:\(urlStr)")
