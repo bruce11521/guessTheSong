@@ -16,6 +16,7 @@ class GuessSongViewController: UIViewController {
     @IBOutlet weak var GuessSongBtn: UIButton!
     @IBOutlet weak var HintsTextView: UITextView!
     @IBOutlet weak var LvNumberImageView: UIImageView!
+    @IBOutlet weak var missionTextView: UITextView!
     
     var ituneSong = [Song]()   //itune Song data
     /////func lvNumberCounter
@@ -39,7 +40,8 @@ class GuessSongViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
         self.navigationController?.navigationBar.shadowImage = image
         initSongData()
-        
+        self.missionTextView.text = ""
+        self.missionTextView.textColor = UIColor.clear
             // Do any additional setup after loading the view.
     }
     
@@ -114,13 +116,18 @@ class GuessSongViewController: UIViewController {
                     let okAction = UIAlertAction(title: "Good!", style: .default, handler: nil)
                     ansController.addAction(okAction)
                     self.present(ansController, animated: true, completion: nil)
-                    
+                    self.missionTextView.text = "猜歌成功！"
+                    self.missionTextView.textColor = UIColor.systemGreen
                 }else{
                     let ansController = UIAlertController(title: "可惜了！", message: "你的選擇：" + action.title! + "\n正確答案："+songDataBase[self.GuessSongQuestion], preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "再接再厲！", style: .default, handler: nil)
                     ansController.addAction(okAction)
                     self.present(ansController, animated: true, completion: nil)
+                    self.missionTextView.text = "猜歌失敗！"
+                    self.missionTextView.textColor = UIColor.systemRed
+                    self.player?.pause()
                 }
+                
                 self.LvNumberCounter()
                 self.HintsTextView.text = nil  //猜過後，清空提示
                 self.HintsBtnCounter = 0 //重新計數提示
@@ -141,6 +148,11 @@ class GuessSongViewController: UIViewController {
         player = AVPlayer(url: song.previewUrl)
         player?.play()
         isGuessSong = true
+        
+        self.missionTextView.text = ""
+        self.missionTextView.textColor = UIColor.clear
+        
+        
             if lvNumber == 50{
                 let LVController = UIAlertController(title: "恭喜破完第一大關！後面關卡開發中，敬請期待！", message: "重新計算關卡！" , preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK!", style: .default, handler: nil)

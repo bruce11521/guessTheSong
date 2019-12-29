@@ -33,7 +33,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="Qbc-MH-chf">
             <objects>
-                <viewController id="fZt-wb-96t" customClass="mainMenuViewController" customModule="guessTheSong" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fZt-wb-96t" customClass="mainMenuViewController" customModule="猜歌吧" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mYy-qp-fIx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Guess Song View Controller-->
         <scene sceneID="f6r-CU-D0E">
             <objects>
-                <viewController id="rRO-OI-sBs" customClass="GuessSongViewController" customModule="guessTheSong" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rRO-OI-sBs" customClass="GuessSongViewController" customModule="猜歌吧" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcp-hP-lU9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,9 +90,9 @@
                                 <rect key="frame" x="16" y="571" width="343" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="DFChu-W4-WIN-BF" family="DFChuW4-B5" pointSize="50"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="請回答！"/>
+                                <state key="normal" title="猜歌吧！"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
@@ -114,7 +114,7 @@
                                 <rect key="frame" x="16" y="113" width="70" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="DFChu-W4-WIN-BF" family="DFChuW4-B5" pointSize="34"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="開始聽歌">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -144,7 +144,7 @@
                                 <rect key="frame" x="211" y="488" width="148" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="DFChu-W4-WIN-BF" family="DFChuW4-B5" pointSize="30"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="來點提示"/>
                                 <userDefinedRuntimeAttributes>
@@ -156,6 +156,14 @@
                                     <action selector="HintsBtnPress:" destination="rRO-OI-sBs" eventType="touchUpInside" id="Uh0-QS-bF7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="猜歌成功！" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGW-Pc-Nmo">
+                                <rect key="frame" x="79" y="410" width="217" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.61622557330000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DFChu-W4-WIN-BF" family="DFChuW4-B5" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nsc-FT-Jay"/>
@@ -168,6 +176,7 @@
                         <outlet property="LvNumberImageView" destination="R8E-kF-OeF" id="V8h-Ry-e3a"/>
                         <outlet property="PlaySongBtn" destination="Kwp-HI-k73" id="Qqo-Mc-tgC"/>
                         <outlet property="SongTitleLabel" destination="Rf6-op-fby" id="5hh-vX-4SN"/>
+                        <outlet property="missionTextView" destination="TGW-Pc-Nmo" id="ndC-mU-Fpd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNw-z1-W04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
