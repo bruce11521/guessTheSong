@@ -118,6 +118,7 @@ class GuessSongViewController: UIViewController {
                     self.present(ansController, animated: true, completion: nil)
                     self.missionTextView.text = "猜歌成功！"
                     self.missionTextView.textColor = UIColor.systemGreen
+                    self.PlaySongBtn.setTitle("下一首來都來", for: .normal)
                 }else{
                     let ansController = UIAlertController(title: "可惜了！", message: "你的選擇：" + action.title! + "\n正確答案："+songDataBase[self.GuessSongQuestion], preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "再接再厲！", style: .default, handler: nil)
@@ -125,6 +126,7 @@ class GuessSongViewController: UIViewController {
                     self.present(ansController, animated: true, completion: nil)
                     self.missionTextView.text = "猜歌失敗！"
                     self.missionTextView.textColor = UIColor.systemRed
+                    self.PlaySongBtn.setTitle("繼續來挑戰!", for: .normal)
                     self.player?.pause()
                 }
                 
