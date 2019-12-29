@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E73ECE823A62EEC00A41598 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73ECE723A62EEC00A41598 /* Song.swift */; };
+		4ECE0770238D6B180068ACC4 /* DFChuW4.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ECE076F238D6B170068ACC4 /* DFChuW4.ttf */; };
 		4EDFEF2B238A773900C70E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFEF2A238A773900C70E4B /* AppDelegate.swift */; };
 		4EDFEF2D238A773900C70E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFEF2C238A773900C70E4B /* SceneDelegate.swift */; };
-		4EDFEF2F238A773900C70E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFEF2E238A773900C70E4B /* ViewController.swift */; };
 		4EDFEF32238A773900C70E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFEF30238A773900C70E4B /* Main.storyboard */; };
 		4EDFEF34238A773B00C70E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFEF33238A773B00C70E4B /* Assets.xcassets */; };
 		4EDFEF37238A773B00C70E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFEF35238A773B00C70E4B /* LaunchScreen.storyboard */; };
+		4EDFEF3F238A77B400C70E4B /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFEF3E238A77B400C70E4B /* mainMenuViewController.swift */; };
+		4EDFEF41238A798000C70E4B /* GuessSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFEF40238A798000C70E4B /* GuessSongViewController.swift */; };
+		4EFD8B59239E8C9200FCC8A7 /* GuessSongAry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD8B58239E8C9200FCC8A7 /* GuessSongAry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4EDFEF27238A773900C70E4B /* guessTheSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guessTheSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E73ECE723A62EEC00A41598 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		4ECE076F238D6B170068ACC4 /* DFChuW4.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DFChuW4.ttf; sourceTree = "<group>"; };
+		4EDFEF27238A773900C70E4B /* 猜歌吧.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "猜歌吧.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDFEF2A238A773900C70E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDFEF2C238A773900C70E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EDFEF2E238A773900C70E4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EDFEF31238A773900C70E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EDFEF33238A773B00C70E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDFEF36238A773B00C70E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDFEF38238A773B00C70E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDFEF3E238A77B400C70E4B /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
+		4EDFEF40238A798000C70E4B /* GuessSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessSongViewController.swift; sourceTree = "<group>"; };
+		4EFD8B58239E8C9200FCC8A7 /* GuessSongAry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessSongAry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		4EDFEF28238A773900C70E4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EDFEF27238A773900C70E4B /* guessTheSong.app */,
+				4EDFEF27238A773900C70E4B /* 猜歌吧.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +66,13 @@
 			children = (
 				4EDFEF2A238A773900C70E4B /* AppDelegate.swift */,
 				4EDFEF2C238A773900C70E4B /* SceneDelegate.swift */,
-				4EDFEF2E238A773900C70E4B /* ViewController.swift */,
 				4EDFEF30238A773900C70E4B /* Main.storyboard */,
+				4EFD8B58239E8C9200FCC8A7 /* GuessSongAry.swift */,
+				4EDFEF40238A798000C70E4B /* GuessSongViewController.swift */,
+				4E73ECE723A62EEC00A41598 /* Song.swift */,
+				4EDFEF3E238A77B400C70E4B /* mainMenuViewController.swift */,
 				4EDFEF33238A773B00C70E4B /* Assets.xcassets */,
+				4ECE076F238D6B170068ACC4 /* DFChuW4.ttf */,
 				4EDFEF35238A773B00C70E4B /* LaunchScreen.storyboard */,
 				4EDFEF38238A773B00C70E4B /* Info.plist */,
 			);
@@ -84,7 +96,7 @@
 			);
 			name = guessTheSong;
 			productName = guessTheSong;
-			productReference = 4EDFEF27238A773900C70E4B /* guessTheSong.app */;
+			productReference = 4EDFEF27238A773900C70E4B /* 猜歌吧.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECE0770238D6B180068ACC4 /* DFChuW4.ttf in Resources */,
 				4EDFEF37238A773B00C70E4B /* LaunchScreen.storyboard in Resources */,
 				4EDFEF34238A773B00C70E4B /* Assets.xcassets in Resources */,
 				4EDFEF32238A773900C70E4B /* Main.storyboard in Resources */,
@@ -138,7 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDFEF2F238A773900C70E4B /* ViewController.swift in Sources */,
+				4E73ECE823A62EEC00A41598 /* Song.swift in Sources */,
+				4EDFEF3F238A77B400C70E4B /* mainMenuViewController.swift in Sources */,
+				4EDFEF41238A798000C70E4B /* GuessSongViewController.swift in Sources */,
+				4EFD8B59239E8C9200FCC8A7 /* GuessSongAry.swift in Sources */,
 				4EDFEF2B238A773900C70E4B /* AppDelegate.swift in Sources */,
 				4EDFEF2D238A773900C70E4B /* SceneDelegate.swift in Sources */,
 			);
@@ -287,12 +303,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52D79FS5YF;
 				INFOPLIST_FILE = guessTheSong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brucelin.guessTheSong;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "猜歌吧";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +322,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52D79FS5YF;
 				INFOPLIST_FILE = guessTheSong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brucelin.guessTheSong;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "猜歌吧";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
